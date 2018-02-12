@@ -14,14 +14,17 @@ html {
 
 .heading_font {
     font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
 }
 
 /* Header Styling */
 .header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: #ffffff;
     border-bottom: solid #cccccc 2px;
+    height: 100px;
 }
 
 /* Colored section with my name (top-left) - In the Header */
@@ -31,13 +34,12 @@ html {
     color: #ffffff;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding-right: 35px;
-    padding-left: 35px;
+    padding: 35px 15px 35px 15px;
 }
 
 /* Navigation bar (top-right) styling - In the Header */
 a.nav_list {
+    display: flex;
     text-decoration: none;
     font-size: 20px;
 }
@@ -49,6 +51,7 @@ a.nav_list {
 }   
 
 .nav_list li {
+    display: flex;
     border-right: 1px solid lightgrey;
     list-style-type:none;
 }
@@ -80,37 +83,75 @@ a.nav_list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: x-large;
+    font-size: xx-large;
     color: #4aaaa5;
-    border-bottom: solid #cccccc 2px;
+    /*border-bottom: solid #cccccc 2px;*/
+    padding-left: 30px;
+    padding-top: 10px;  
 }
 
 .about_me_bottom {
+    border-top: solid #cccccc 2px;
+    padding-top: 30px;
+    margin: 30px;
+    line-height: 30px;
+}
+
+.profile_pic {
+    height: 200px;
+    width: 200px;
+    padding: 10px 20px 20px 0px;
+    float: left;
 }
 
 /* The 'Connect with Me' box on the right - In the Main Section */
 .connect_with_me {
-    width: 270px;
-    height: 10%;
+    display: flex;
+    flex-direction: column;  
     background-color: #ffffff;
     border: 1px solid lightgrey;
+    height: 50%;
     margin-top: 45px;
     margin-left: 22.5px;
+    padding: 30px;
+    width: 270px; 
 }
 
 .connect_top {
     color: #4aaaa5;
-    border-bottom: solid #cccccc 2px;
+    font-size: x-large;
+    padding-bottom: 30px;
 }
 
 .connect_bottom {
     display: flex;
-    justify-content: space-around;
+    border-top: solid #cccccc 2px;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding-top: 30px;
+}
+/*
+.icon {
+    height: 64px;
+    width: 64px;
+}*/
+
+.footer {
+    align-items: center;
+    background-color: #666666;
+    border-top: solid 10px #4aaaa5;
+    color: #cccccc;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin: auto auto 0 auto;
+    width: 100%;
 }
 
 /* The background image - The wrapper for the ENTIRE page */
 .body {
     background-image: url("./../images/memphis-colorful.png");
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
