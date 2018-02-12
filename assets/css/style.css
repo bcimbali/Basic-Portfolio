@@ -1,52 +1,33 @@
-body {
-    background-image: url("./../images/vertical-waves.png");
-    padding-left: 32px;
-    padding-right: 32px;
-}
+/* Applies a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #777777;
-}
-
-a.nav_links {
-    color: #777777;
-    text-decoration: none;
+/* Font Classes */  
+.all_other_fonts {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 20px;
+    color: #777777;
 }
 
-.nav_list {
-    display: flex;
-    list-style-type:none;
+.heading_font {
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-li {
-    border-right: 1px solid lightgrey;
-}
-
-li:last-child {
-    border-right: none;
-}
-
-.nav_links {
-    padding: 12px;
-    border-right: #777777;
-}
-
-header {
+/* Header Styling */
+.header {
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
     border-bottom: solid #cccccc 2px;
 }
 
+/* Colored section with my name (top-left) - In the Header */
 .my_name {
     background-color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: xx-large;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
@@ -55,40 +36,71 @@ header {
     padding-left: 35px;
 }
 
+/* Navigation bar (top-right) styling - In the Header */
+a.nav_list {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+}   
+
+.nav_list li {
+    border-right: 1px solid lightgrey;
+    list-style-type:none;
+}
+
+.nav_list li:last-child {
+    border-right: none;
+}
+
+/* The main part of the page that contains the 'About Me' and 'Connect with Me' */
+.main_section {
+    display: flex;
+    justify-content: center;
+    /*padding: 40px;*/
+}
+
+/* The 'About Me' box - In the Main Section */
 .about_me {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     width: 650px;
     border: 1px solid lightgrey;
     padding: 20px;
+    margin-top: 45px;
+    margin-right: 22.5px;
 }
 
-.about_me_header {
-    font-family: 'Georgia', Times, Times New Roman, serif;
+.about_me_top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: x-large;
     color: #4aaaa5;
     border-bottom: solid #cccccc 2px;
 }
 
-.bio {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
+.about_me_bottom {
 }
 
+/* The 'Connect with Me' box on the right - In the Main Section */
 .connect_with_me {
     width: 270px;
-    height: 200px;
+    height: 10%;
     background-color: #ffffff;
     border: 1px solid lightgrey;
+    margin-top: 45px;
+    margin-left: 22.5px;
 }
 
 .connect_top {
-    font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
     border-bottom: solid #cccccc 2px;
-}
-
-.icons {
-  display: flex;
-  justify-content: space-around;
 }
 
 .connect_bottom {
@@ -96,4 +108,9 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+}
+
+/* The background image - The wrapper for the ENTIRE page */
+.body {
+    background-image: url("./../images/memphis-colorful.png");
 }
