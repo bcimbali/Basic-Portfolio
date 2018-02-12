@@ -64,6 +64,7 @@ a.nav_list {
 .main_section {
     display: flex;
     justify-content: center;
+    margin-bottom: 35px;
     /*padding: 40px;*/
 }
 
@@ -95,6 +96,15 @@ a.nav_list {
     padding-top: 30px;
     margin: 30px;
     line-height: 30px;
+}
+
+.contact_bottom {
+    /*display: flex;
+    flex-direction: column;*/
+    border-top: solid #cccccc 2px;
+    padding-top: 30px;
+    margin: 30px;
+    /*line-height: 30px;*/
 }
 
 .profile_pic {
@@ -142,6 +152,31 @@ a.nav_list {
     height: 100px;
     margin: auto auto 0 auto;
     width: 100%;
+}
+
+/* Form styling on Contact Page */
+
+.form_field {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.text_area {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;  
+}
+
+.submit_button {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: large;
+    margin-top: 10px;
+    padding: 10px 32px;
 }
 
 /* The background image - The wrapper for the ENTIRE page */

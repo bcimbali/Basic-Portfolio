@@ -6,7 +6,7 @@
     <title>Contact Brett</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
 </head>
 <body class="body">
     <!-- Header top Part -->
@@ -28,17 +28,25 @@
     <!-- The main section of the page. -->
     <section class="main_section">
 
-            <!-- 'About Me', large box on left side -->
+            <!-- 'Contact', large box on left side -->
             <article class="about_me">
                 <div class="about_me_top heading_font">
                     <h1>
                         Contact
                     </h1>
                 </div>
-    
-                <div class="about_me_bottom all_other_fonts">
-
-                </div>
+                <!-- The form elements -->
+                <form class="contact_bottom all_other_fonts">
+                    Name<br>
+                    <input type="text" name="name" class="form_field" placeholder="Joe Example">
+                    <br>
+                    Email<br>
+                    <input type="text" name="email" class="form_field" placeholder="Joe@example.biz">
+                    <br>
+                    Message<br>
+                    <textarea placeholder="Stay cool, don't change." rows="4" cols="50" name="comment" form="usrform" class="text_area"></textarea>
+                    <input type="submit" value="Submit" class="submit_button all_other_fonts">
+                </form>
             </article>
     
             <!-- Smaller box off to the right side of the main section -->
@@ -68,7 +76,7 @@
     
         <!-- Footer at bottom of page -->
         <footer class="footer all_other_fonts">
-                Copyright &#x24B8 2018 Brett Cimbalik
+                Copyright &#x24B8; 2018 Brett Cimbalik
         </footer>
     
 </body>
