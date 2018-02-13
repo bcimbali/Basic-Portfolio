@@ -98,6 +98,34 @@ a.nav_list {
     line-height: 30px;
 }
 
+.portfolio_top {
+    isplay: flex;
+    justify-content: flex-start;
+    border-bottom: solid #cccccc 2px;
+    align-items: center;
+    font-size: xx-large;
+    color: #4aaaa5;
+    /*border-bottom: solid #cccccc 2px;*/
+    padding-left: 30px;
+    padding-top: 10px; 
+}
+
+.portfolio_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding-top: 30px;
+    /*margin: 30px;
+    line-height: 30px;*/
+}
+
+.portfolio_bottom img {
+    width: 270px;
+    height: 200px;
+    margin: 30px 10px;   
+}
+
 .contact_bottom {
     /*display: flex;
     flex-direction: column;*/
