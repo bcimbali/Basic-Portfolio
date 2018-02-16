@@ -13,8 +13,7 @@ html {
 }
 
 .heading_font {
-    font-family: 'Audiowide', cursive;
-    /*font-family: 'Georgia', Times, Times New Roman, serif;*/
+    font-family: 'Georgia', Times, Times New Roman, serif;
     font-weight: bold;
 }
 
@@ -171,7 +170,7 @@ a.nav_list {
     margin-top: 45px;
     margin-left: 22.5px;
     padding: 30px;
-    width: 290px; 
+    width: 270px; 
 }
 
 .connect_top {
